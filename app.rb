@@ -7,5 +7,11 @@ module FormsLab
       erb :'pirates/new'
     end
 
+    post '/pirates' do
+      binding.pry
+      @pirate = Pirate.new(params)
+      @ship1 = Ship.new(params[])
+    end 
+
   end
 end
